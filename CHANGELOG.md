@@ -59,7 +59,6 @@ If you have any problems, please report them in [this issue](https://github.com/
 
 - API Support for Elasticsearch version 7.13.3
 
->>>>>>> b6539da3... [DOCS] Adds 7.14 Release Notes about changes in transport
 ## 7.13.2
 
 ### Client
