@@ -31,7 +31,8 @@ module Elasticsearch
       # @api private
       def __escape(string)
         return string if string == '*'
-        defined?(EscapeUtils) ? EscapeUtils.escape_url(string.to_s) : CGI.escape(string.to_s)
+
+        ERB::Util.url_encode(string.to_s)
       end
 
       # Create a "list" of values from arguments, ignoring nil values and encoding special characters.
